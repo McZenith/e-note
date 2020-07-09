@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 const engine = new Engine({ template: './src/index.vm' });
 
-module.exports = (data: any) => {
+module.exports = data => {
   return engine.render({
     ...velocityData,
     ...velocityDataPrivate,
