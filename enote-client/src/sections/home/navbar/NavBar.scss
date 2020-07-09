@@ -1,0 +1,38 @@
+.btn {
+  border-radius: 3px;
+  height: 36px;
+  padding: 3px;
+  color: #0079bf;
+  font-family: 'Charlie Text', sans-serif;
+  font-size: 17.5px;
+  font-weight: 500;
+  width: 82px;
+  height: 36px;
+  line-height: 26.25px;
+  background-color: white;
+  border: white solid 1px;
+
+  .btn:active {
+    border: white solid 1px;
+  }
+}
+
+.btn__small {
+  border-radius: 3px;
+  color: #ffffff;
+  height: 36px;
+  background-color: transparent;
+  border: transparent;
+  font-family: 'Charlie Text', sans-serif;
+  font-size: 17.5px;
+  font-weight: 400;
+  height: 36px;
+  line-height: 26.25px;
+  margin: 0px;
+  padding: 4px 8px;
+  width: 67px;
+  text-decoration: underline;
+  .btn__small:active {
+    border: transparent;
+  }
+}

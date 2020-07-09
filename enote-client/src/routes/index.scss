@@ -1,0 +1,14 @@
+html,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+.main {
+  max-width: 100%;
+}
