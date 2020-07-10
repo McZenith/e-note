@@ -10,10 +10,17 @@
   height: 36px;
   line-height: 26.25px;
   background-color: white;
-  border: white solid 1px;
+  border: black 1px solid;
+  cursor: pointer;
 
-  .btn:active {
-    border: white solid 1px;
+  &:active {
+    border: none;
+    background-color: white;
+    box-sizing: border-box;
+  }
+  &:hover {
+    border: none;
+    background-color: white;
   }
 }
 
@@ -22,7 +29,7 @@
   color: #ffffff;
   height: 36px;
   background-color: transparent;
-  border: transparent;
+  border: none;
   font-family: 'Charlie Text', sans-serif;
   font-size: 17.5px;
   font-weight: 400;
@@ -31,8 +38,23 @@
   margin: 0px;
   padding: 4px 8px;
   width: 67px;
-  text-decoration: underline;
-  .btn__small:active {
-    border: transparent;
+  cursor: pointer;
+
+  &:active {
+    border: none;
+    text-decoration: underline;
   }
+  &:hover {
+    border: none;
+    text-decoration: underline;
+  }
+}
+
+.sticky {
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 1px 1px 1px #222;
+  animation: moveDown 0.5s ease-in-out;
 }

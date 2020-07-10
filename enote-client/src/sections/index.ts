@@ -1,3 +1,3 @@
-import { NavBar } from './home';
+import { NavBar, Hero } from './home';
 
-export { NavBar };
+export { NavBar, Hero };
