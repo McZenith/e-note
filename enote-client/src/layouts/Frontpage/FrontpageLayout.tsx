@@ -5,7 +5,7 @@ import f from './FrontpageLayout.scss';
 
 const FrontpageLayout: React.SFC<FrontpageLayoutProps> = ({ children }) => {
   return (
-    <Box className={f.main} flex={1} width="100vw" height="100vh">
+    <Box className={f.main} width="100%" direction="vertical">
       {children}
     </Box>
   );

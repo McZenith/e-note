@@ -1,7 +1,7 @@
 import * as React from 'react';
 import n from './NavBar.scss';
 import { NavBarProps } from './interface';
-import { Box, Button } from 'wix-style-react';
+import { Box } from 'wix-style-react';
 
 const Logo = () => (
   <svg className="d-block" width="130" height="40" viewBox="0 0 885 272">
@@ -13,18 +13,7 @@ const Logo = () => (
 );
 
 const NavWrapper: React.SFC = ({ children }): JSX.Element => (
-  <Box
-    width="100%"
-    height="72px"
-    paddingLeft="16px"
-    paddingRight="16px"
-    direction="horizontal"
-    verticalAlign="middle"
-    align="space-between"
-    display="sticky"
-    top="0px"
-    z-index={100}
-  >
+  <Box width="100%" height="72px" align="center" position="sticky" top="0">
     {children}
   </Box>
 );
@@ -38,8 +27,16 @@ const NavButtons: React.SFC = () => (
 const NavBar: React.SFC<NavBarProps> = (): JSX.Element => {
   return (
     <NavWrapper>
-      <Logo />
-      <NavButtons />
+      <Box
+        width="98%"
+        height="100%"
+        direction="horizontal"
+        verticalAlign="middle"
+        align="space-between"
+      >
+        <Logo />
+        <NavButtons />
+      </Box>
     </NavWrapper>
   );
 };

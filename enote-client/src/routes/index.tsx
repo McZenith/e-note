@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Home';
-import './index.scss';
+import n from './index.scss';
 
 const IndexRouter: React.SFC = (): JSX.Element => {
   return (
-    <div className="main">
+    <div className={n.main}>
       <Router>
         <div>
           <Switch>

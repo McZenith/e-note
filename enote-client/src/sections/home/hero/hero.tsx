@@ -1,15 +1,9 @@
-import React, { Ref } from 'react';
-export interface HeroProps {
-  element: any;
-}
+import * as React from 'react';
+import { Box } from 'wix-style-react';
+export interface HeroProps {}
 
-const Hero: React.SFC<HeroProps> = ({ element }) => {
-  return (
-    <div
-      ref={element}
-      style={{ width: '100%', height: '100vh', background: 'black' }}
-    ></div>
-  );
+const Hero: React.SFC<HeroProps> = () => {
+  return <Box backgroundColor="#000000" height="100vh"></Box>;
 };
 
 export default Hero;

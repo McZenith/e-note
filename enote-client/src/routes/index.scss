@@ -6,9 +6,9 @@ body {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
-  width: 100vw;
 }
 
 .main {
-  max-width: 100%;
+  width: 100%;
+  box-sizing: content-box;
 }
