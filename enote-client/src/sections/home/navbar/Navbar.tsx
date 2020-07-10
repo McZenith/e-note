@@ -32,7 +32,7 @@ const NavWrapper: React.SFC = ({ children }): JSX.Element => (
 const NavButtons: React.SFC = () => (
   <Box width="154px" align="space-between">
     <button className={n.btn__small}>Log In</button>
-    <button className={n.btn}>Sign Up</button>
+    <button className={n.btn__large}>Sign Up</button>
   </Box>
 );
 const NavBar: React.SFC<NavBarProps> = (): JSX.Element => {

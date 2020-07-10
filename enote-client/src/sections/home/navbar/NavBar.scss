@@ -1,51 +1,36 @@
 .btn {
   border-radius: 3px;
+  padding: 4px 8px;
   height: 36px;
-  padding: 3px;
   color: #0079bf;
   font-family: 'Charlie Text', sans-serif;
   font-size: 17.5px;
-  font-weight: 500;
-  width: 82px;
   height: 36px;
   line-height: 26.25px;
   background-color: white;
-  border: black 1px solid;
+  border: none;
   cursor: pointer;
+  outline: none;
+}
 
-  &:active {
-    border: none;
-    background-color: white;
-    box-sizing: border-box;
-  }
-  &:hover {
-    border: none;
-    background-color: white;
-  }
+.btn__large {
+  @extend .btn;
+  color: #0079bf;
+  font-weight: 500;
+  width: 82px;
+  background-color: white;
+  border: none;
 }
 
 .btn__small {
-  border-radius: 3px;
+  @extend .btn;
   color: #ffffff;
-  height: 36px;
   background-color: transparent;
   border: none;
-  font-family: 'Charlie Text', sans-serif;
-  font-size: 17.5px;
   font-weight: 400;
-  height: 36px;
-  line-height: 26.25px;
   margin: 0px;
-  padding: 4px 8px;
   width: 67px;
-  cursor: pointer;
-
-  &:active {
-    border: none;
-    text-decoration: underline;
-  }
   &:hover {
-    border: none;
     text-decoration: underline;
   }
 }
