@@ -2,6 +2,8 @@ import * as React from 'react';
 import n from './NavBar.scss';
 import { NavBarProps } from './interface';
 import { Box } from 'wix-style-react';
+import { useSticky } from 'react-use-sticky';
+import classNames from 'classnames';
 
 const Logo = () => (
   <svg className="d-block" width="130" height="40" viewBox="0 0 885 272">
@@ -12,9 +14,15 @@ const Logo = () => (
   </svg>
 );
 
-const NavWrapper: React.SFC<NavBarProps> = ({ children }): JSX.Element => (
-  <div className={n.sticky}>{children}</div>
-);
+const NavWrapper: React.SFC<NavBarProps> = ({ children }): JSX.Element => {
+  const [headerBarRef, sticky] = useSticky();
+
+  return (
+    <div ref={headerBarRef} className={sticky ? n.nav : n.scrolled}>
+      {children}
+    </div>
+  );
+};
 
 const NavButtons: React.SFC = () => (
   <Box width="154px" align="space-between">
@@ -26,7 +34,7 @@ const NavBar: React.SFC<NavBarProps> = (): JSX.Element => {
   return (
     <NavWrapper>
       <Box
-        width="97.5%"
+        width="98.5%"
         height="100%"
         direction="horizontal"
         verticalAlign="middle"
