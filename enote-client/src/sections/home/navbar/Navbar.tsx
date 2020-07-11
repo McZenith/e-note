@@ -37,7 +37,7 @@ const NavWrapper: React.SFC<NavBarProps> = ({ children }): JSX.Element => {
 };
 
 const NavButtons: React.SFC = () => (
-  <Box width="154px" align="space-between" marginRight="10px">
+  <Box width="154px" align="space-between" marginRight="0.625em">
     <button className={n.btn__small}>Log In</button>
     <button className={n.btn__large}>Sign Up</button>
   </Box>
@@ -51,7 +51,7 @@ const NavBar: React.SFC<NavBarProps> = (): JSX.Element => {
         direction="horizontal"
         verticalAlign="middle"
         align="space-between"
-        marginLeft="13px"
+        marginLeft="0.813em"
       >
         <Logo />
         <NavButtons />
