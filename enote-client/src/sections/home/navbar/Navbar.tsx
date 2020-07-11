@@ -12,10 +12,8 @@ const Logo = () => (
   </svg>
 );
 
-const NavWrapper: React.SFC = ({ children }): JSX.Element => (
-  <Box width="100%" height="72px" align="center" position="sticky" top="0">
-    {children}
-  </Box>
+const NavWrapper: React.SFC<NavBarProps> = ({ children }): JSX.Element => (
+  <div className={n.sticky}>{children}</div>
 );
 
 const NavButtons: React.SFC = () => (
@@ -28,7 +26,7 @@ const NavBar: React.SFC<NavBarProps> = (): JSX.Element => {
   return (
     <NavWrapper>
       <Box
-        width="98%"
+        width="97.5%"
         height="100%"
         direction="horizontal"
         verticalAlign="middle"

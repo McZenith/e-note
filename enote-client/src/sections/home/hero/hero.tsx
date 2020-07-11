@@ -3,7 +3,7 @@ import { Box } from 'wix-style-react';
 export interface HeroProps {}
 
 const Hero: React.SFC<HeroProps> = () => {
-  return <Box backgroundColor="#000000" height="100vh"></Box>;
+  return <Box height="100vh">hi</Box>;
 };
 
 export default Hero;

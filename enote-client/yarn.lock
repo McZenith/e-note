@@ -12267,6 +12267,11 @@ react-transition-group@^2.2.1, react-transition-group@^2.3.1, react-transition-g
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
+react-use-sticky@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-use-sticky/-/react-use-sticky-0.1.2.tgz#71f7b208eb24c50de9430993b63128cae424e4e5"
+  integrity sha512-3Ubfk096LUOxqZqgG0PCYN9Iuw+IyrNVbWwjzv3jj1FwgFDRVKCqPFx6XsUkJoCfpEn/HxGTqsgSlFkVBoDqHQ==
+
 react-window@^1.8.5:
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/react-window/-/react-window-1.8.5.tgz#a56b39307e79979721021f5d06a67742ecca52d1"
