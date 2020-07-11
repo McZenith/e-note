@@ -36,20 +36,21 @@
 }
 
 .nav {
-  @extend .sticky;
-  position: sticky;
-  top: 0;
-  transition: background-color 0.5s ease-in-out;
-}
-
-.sticky {
-  width: 100%;
   height: 72px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  transition: all 0.2s ease-in-out;
 }
 
 .scrolled {
-  @extend .sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #0079bf;
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
