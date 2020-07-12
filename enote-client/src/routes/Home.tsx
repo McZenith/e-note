@@ -7,7 +7,9 @@ const Home: React.SFC = () => {
     <FrontpageLayout>
       <NavBar />
       <Hero />
-      <Box height="100vh">HI</Box>
+      <Box height="100vh" backgroundColor="#fff">
+        HI
+      </Box>
     </FrontpageLayout>
   );
 };

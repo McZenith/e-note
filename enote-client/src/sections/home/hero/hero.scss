@@ -1,0 +1,54 @@
+.heading {
+  color: #ffffff;
+  font-family: 'Charlie Display', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+  margin: 0px 0px 8px;
+}
+
+.paragraph {
+  color: #ffffff;
+  font-family: 'Charlie Text', sans-serif;
+  font-size: 1.562rem;
+  font-weight: lighter;
+  line-height: 2.343rem;
+  margin: 0px 0px 16px;
+  padding: 0px;
+}
+
+.img {
+  background-color: transparent !important;
+}
+
+.input {
+  color: #000000;
+  font-family: 'Charlie Text', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  height: 55px;
+  line-height: 43px;
+  margin: 0px;
+  padding: 4px 4px 4px 16px;
+  width: 376px;
+
+  &::placeholder {
+    font-size: 50px !important;
+  }
+}
+
+.btn__cta {
+  background-color: #4ca03c;
+  color: #ffffff;
+  font-family: 'Charlie Text', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  height: 55px;
+  line-height: 37.5px;
+  margin: 0px 0px 0px 8px;
+  padding: 8px 24px;
+  width: 264px;
+  outline: none;
+  border-radius: 3px;
+  border: #4ca03c 1px solid;
+}
